@@ -1,1 +1,31 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Kobiljon T.</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header id="header">
+    <ul id="left_nav">
+        <li><a id="app_title" href="#header">Kobiljon Toshnazarov</a></li>
+    </ul>
+    <ul id="right_nav">
+        <li><a href="#projects">My Projects</a></li>
+    </ul>
+</header>
+<br>
+<div id="content_div">
+    <h1 id="title_h1">Welcome to my portfolio!</h1>
+</div>
+<footer>
+    <a href="{% url 'campaigns-list' %}">EasyTrack</a>
+</footer>
+
+</body>
+</html>
