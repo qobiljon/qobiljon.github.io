@@ -1,10 +1,14 @@
 :root {
-    --main-color: #0A5
+    /*--main-box-color: #0A5;*/
+    --main-box-color: #4285F4;
+    --main-bg-color: azure;
+    --main-text-color: black;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: azure;
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
     margin: 0;
 }
 
@@ -14,7 +18,7 @@ body #content_div {
 
 header {
     height: 60px;
-    background-color: var(--main-color);
+    background-color: var(--main-box-color);
     position: relative;
     display: block;
 }
@@ -54,7 +58,7 @@ footer {
     clear: both;
 
     height: 30px;
-    background-color: var(--main-color);
+    background-color: var(--main-box-color);
     position: relative;
     display: block;
     text-align: center;
