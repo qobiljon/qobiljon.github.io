@@ -74,14 +74,14 @@ footer {
 /* content */
 #content div.root_div_dark {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background: var(--div-bg-color-dark);
     color: var(--text-color-light);
 }
 
 #content div.root_div_light {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background: var(--div-bg-color-light);
     color: var(--text-color-dark);
 }
