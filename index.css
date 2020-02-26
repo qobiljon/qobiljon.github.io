@@ -28,22 +28,42 @@ header {
     display: block;
 }
 
-header a {
+header a, footer a {
     color: var(--text-color-light);
     text-decoration: none;
 }
 
-header ul {
+header ul, footer ul {
     padding-inline-start: 0;
 }
 
-header ul li {
+header ul li, footer ul li {
     list-style-type: none;
 }
 
-#app_title {
-    font-size: 150%;
+header ul li, footer ul li {
+    display: inline-block;
+    margin-left: 20px;
 }
+
+header ul li a, footer ul li a {
+    cursor: pointer;
+}
+
+header li a:hover, footer li a:hover {
+    color: var(--div-bg-color-dark);
+    transition: 200ms;
+}
+
+#app_title {
+    font-size: 28px;
+    color: var(--text-color-light);
+}
+
+footer {
+    padding-bottom: 40px;
+}
+
 
 #left_nav {
     float: left;
@@ -53,21 +73,91 @@ header ul li {
 #right_nav {
     float: right;
     margin-right: 20px;
-}
-
-#right_nav li {
-    display: inline-block;
+    padding-top: 5px;
 }
 
 footer {
     clear: both;
-    height: 30px;
+    height: 32px;
     background-color: var(--header-color);
     position: relative;
     display: block;
     text-align: center;
     padding-top: 10px;
     bottom: 0;
+}
+
+footer ul li a img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* snackbar */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-25%);
+    bottom: 30px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }
 
 
@@ -116,7 +206,7 @@ footer {
     color: var(--div-bg-color-dark);
     margin-top: 20px;
     padding: 10px;
-    width: 300px;
+    width: 180px;
     border: none;
     border-radius: 5px;
     font-size: 24px;

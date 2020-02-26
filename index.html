@@ -12,12 +12,19 @@
 <body>
 <header id="header">
     <ul id="left_nav">
-        <li><a id="app_title" href="#header">KOBILJON TOSHNAZAROV</a></li>
+        <li><span id="app_title">KOBILJON TOSHNAZAROV</span></li>
     </ul>
     <ul id="right_nav">
-        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#header">HOME</a></li>
+        <li><a href="#skills_div">SKILLS & EDUCATION</a></li>
+        <li><a href="#projects_div">PROJECTS</a></li>
+        <li><a href="#awards_div">AWARDS</a></li>
+        <li><a href="#experience_div">EXPERIENCE</a></li>
+        <li><a href="#contacts_div">CONTACT ME</a></li>
     </ul>
 </header>
+
+<div id="snackbar">Some text some message..</div>
 
 <div id="content">
     <div class="root_div_dark">
@@ -32,16 +39,44 @@
             <br>
             <a href="assets/kobiljon_RESUME.docx" class="button-light">MY RESUME</a>
             <a href="assets/kobiljon_CV.docx" class="button-light">MY CV</a>
-            <a href="mailto:qobiljon.toshnazarov@gmail.com" class="button-light">SEND AN EMAIL</a>
+            <a href="mailto:kobiljon@nsl.inha.ac.kr" class="button-light">EMAIL ME</a>
         </div>
     </div>
-    <div class="root_div_light">
+    <div class="root_div_light" id="skills_div">
+        <div class="content_div">
+
+        </div>
+    </div>
+    <div class="root_div_dark" id="projects_div">
+        <div class="content_div">
+
+        </div>
+    </div>
+    <div class="root_div_light" id="awards_div">
+        <div class="content_div">
+
+        </div>
+    </div>
+    <div class="root_div_dark" id="experience_div">
+        <div class="content_div">
+
+        </div>
+    </div>
+    <div class="root_div_light" id="contacts_div">
         <div class="content_div">
 
         </div>
     </div>
 </div>
 
-<footer></footer>
+<footer>
+    <ul id="footer_nav">
+        <li><a href="#header"><img src="assets/home64.ico" alt="home icon"></a></li>
+        <li><a href="https://github.com/Qobiljon"><img src="assets/github64.png" alt="github icon"></a></li>
+        <li><a href="https://linkedin.com/in/qobiljon"><img src="assets/linkedin64.ico" alt="linkedin icon"></a></li>
+        <li><a href="https://join.skype.com/invite/gV5EBgtAle7A"><img src="assets/skype64.ico" alt="skype icon"></a></li>
+        <li><a onclick="copyEmailToClipboard()"><img src="assets/email64.ico" alt="email icon"></a></li>
+    </ul>
+</footer>
 </body>
 </html>
