@@ -207,7 +207,6 @@ p#welcome_text {
     margin-block-start: 0;
 }
 
-
 .button-light {
     margin-left: 20px;
     margin-right: 20px;
@@ -225,6 +224,13 @@ p#welcome_text {
     text-decoration: none;
 }
 
-.button:hover {
+.button-light:hover {
+    background: var(--div-bg-color-dark);
+    color: var(--text-color-light);
+    transition: 300ms;
+}
 
+
+.skill {
+    display: inline-block;
 }
