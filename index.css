@@ -251,6 +251,9 @@ p#welcome_text {
 
 
 .project_div {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
     text-align: start;
 }
 
