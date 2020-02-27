@@ -6,6 +6,7 @@
 
     --text-color-light: white;
     --text-color-dark: black;
+    --text-color-url: orangered;
 
     --div-bg-color-light: #f4ecf7;
     --div-bg-color-dark: #8e44ad;
@@ -249,15 +250,20 @@ p#welcome_text {
 }
 
 
-.project_div a, .project_div div {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--text-color-light);
+.project_div {
     text-align: start;
 }
 
-.project_div div a {
+.project_description {
     display: block;
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+.project_url {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color-url);
 }
 
 .project_img {
