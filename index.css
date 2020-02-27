@@ -11,6 +11,7 @@
     --div-bg-color-dark: #8e44ad;
 }
 
+
 /* body and content */
 body {
     font-family: 'Roboto', sans-serif;
@@ -55,25 +56,24 @@ header li a:hover, footer li a:hover {
     transition: 200ms;
 }
 
-#app_title {
-    font-size: 28px;
-    color: var(--text-color-light);
-}
-
 footer {
     padding-bottom: 40px;
 }
 
-
-#left_nav {
+header ul#left_nav {
     float: left;
-    margin-left: 20px;
+    padding-top: 2px;
 }
 
-#right_nav {
+header ul#right_nav {
     float: right;
     margin-right: 20px;
     padding-top: 5px;
+}
+
+header ul li span#name {
+    font-size: 24px;
+    color: var(--text-color-light);
 }
 
 footer {
@@ -93,7 +93,7 @@ footer ul li a img {
 }
 
 
-/* snackbar */
+/* snackbar / toast */
 #snackbar {
     visibility: hidden;
     min-width: 250px;
@@ -162,41 +162,50 @@ footer ul li a img {
 
 
 /* content */
-#content div.root_div_dark {
+div#content div.root_div_dark {
     width: 100%;
-    height: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: var(--div-bg-color-dark);
     color: var(--text-color-light);
+    text-align: center;
 }
 
-#content div.root_div_light {
+div#content div.root_div_light {
     width: 100%;
-    height: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: var(--div-bg-color-light);
     color: var(--text-color-dark);
 }
 
-#content div.root_div_dark div.content_div {
-    width: 70%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
+div#content div.root_div_dark div.content_div {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
-#content div.root_div_dark div.content_div {
-    width: 60%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
+div#content div.root_div_dark div.content_div {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 
-#welcome_text {
+img#avatar {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+p#welcome_text {
     font-size: 28px;
+    text-align: center;
+    display: block;
+    margin-block-start: 0;
 }
+
 
 .button-light {
     margin-left: 20px;
