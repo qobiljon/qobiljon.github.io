@@ -9,6 +9,8 @@
 
     --div-bg-color-light: #f4ecf7;
     --div-bg-color-dark: #8e44ad;
+
+    --skill-title-color: #53777A;
 }
 
 
@@ -163,7 +165,7 @@ footer ul li a img {
 
 
 /* content */
-div#content div.root_div_dark {
+.root_div_dark {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -172,23 +174,18 @@ div#content div.root_div_dark {
     text-align: center;
 }
 
-div#content div.root_div_light {
+.root_div_light {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     background: var(--div-bg-color-light);
     color: var(--text-color-dark);
+    text-align: center;
 }
 
-div#content div.root_div_dark div.content_div {
-    width: 90%;
+.content_div {
     display: block;
-    margin: 0 auto;
-}
-
-div#content div.root_div_dark div.content_div {
-    width: 90%;
-    display: block;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -230,6 +227,22 @@ p#welcome_text {
     transition: 300ms;
 }
 
+#name_as_content {
+    display: block;
+    font-size: 48px;
+    line-height: 48px;
+}
+
+
+.skill_div {
+    display: block;
+    text-align: center;
+}
+
+.skill_div_title {
+    display: block;
+    color: var(--header-color);
+}
 
 .skill {
     display: inline-block;
