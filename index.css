@@ -205,11 +205,12 @@ footer ul li a img {
 }
 
 img#avatar {
-    width: 256px;
-    height: 256px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
 }
 
 p#welcome_text {
@@ -219,12 +220,10 @@ p#welcome_text {
     margin-block-start: 0;
 }
 
-.button-light {
+.button {
     margin-left: 20px;
     margin-right: 20px;
     display: inline-block;
-    background: var(--text-color-light);
-    color: var(--div-bg-color-dark);
     margin-top: 20px;
     padding: 10px;
     width: 180px;
@@ -236,9 +235,21 @@ p#welcome_text {
     text-decoration: none;
 }
 
-.button-light:hover {
-    background: var(--div-bg-color-dark);
+#resume_button {
+    background-color: #D4AC0D;
     color: var(--text-color-light);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#cv_button {
+    background-color: #1ABC9C;
+    color: var(--text-color-light);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#resume_button:hover, #cv_button:hover {
+    background: var(--div-bg-color-light);
+    color: var(--text-color-dark);
     transition: 300ms;
 }
 
@@ -257,7 +268,24 @@ p#welcome_text {
 
 .skill_div_title {
     display: block;
+    font-size: 24px;
     color: var(--header-color);
+}
+
+.section_light_bg {
+    display: block;
+    font-size: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--header-color);
+}
+
+.section_dark_bg {
+    display: block;
+    font-size: 48px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: var(--text-color-light);
 }
 
 .skill {
