@@ -247,3 +247,21 @@ p#welcome_text {
 .skill {
     display: inline-block;
 }
+
+
+.project_div a, .project_div div {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color-light);
+    text-align: start;
+}
+
+.project_div div a {
+    display: block;
+}
+
+.project_img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
