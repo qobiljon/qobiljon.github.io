@@ -1,0 +1,160 @@
+.skills-diagram {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 90%;
+    margin: 2em auto 2em;
+}
+
+.skills-diagram > dd {
+    /* Hide inner attributes */
+    display: none;
+}
+
+.skills-diagram dt {
+    display: inline-block;
+    vertical-align: top;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50%;
+
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+    /* set defaults to skill-2 */
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.skills-diagram dt:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Support vertical mode */
+.skills-diagram-vertical dt {
+    display: block;
+    /* .25em is an equivalent to inline-block's horizontal whitespace margin */
+    margin: .25em auto;
+}
+
+/* Provide 10 different sizes */
+.skills-diagram .skill-2 {
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+
+    background-color: #ECF0F1BB;
+    border-color: #626567;
+    color: #626567;
+}
+
+.skills-diagram .skill-3 {
+    vertical-align: middle;
+
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    background-color: #ECF0F1BB;
+    border-color: #626567;
+    color: #626567;
+}
+
+.skills-diagram .skill-4 {
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+
+    background-color: #A569BDBB;
+    border-color: #4A235A;
+    color: #4A235A;
+}
+
+.skills-diagram .skill-5 {
+    vertical-align: bottom;
+
+    width: 5em;
+    height: 5em;
+    line-height: 5em;
+    background-color: #5DADE2BB;
+    border-color: #1B4F72;
+    color: #1B4F72;
+}
+
+.skills-diagram .skill-6 {
+    vertical-align: top;
+
+    width: 6em;
+    height: 6em;
+    line-height: 6em;
+
+    background-color: #58D68DBB;
+    border-color: #186A3B;
+    color: #186A3B;
+}
+
+.skills-diagram .skill-7 {
+    width: 7em;
+    height: 7em;
+    line-height: 7em;
+
+    background-color: #CACFD2BB;
+    border-color: #626567;
+    color: #626567;
+}
+
+.skills-diagram .skill-8 {
+    vertical-align: bottom;
+
+    width: 8em;
+    height: 8em;
+    line-height: 8em;
+    background-color: #F4D03FBB;
+    border-color: #7D6608;
+    color: #7D6608;
+}
+
+.skills-diagram .skill-9 {
+    width: 11em;
+    height: 11em;
+    line-height: 11em;
+
+    background-color: #DC7633BB;
+    border-color: #6E2C00;
+    color: #6E2C00;
+}
+
+.skills-diagram .skill-10-1 {
+    width: 14em;
+    height: 14em;
+    line-height: 14em;
+    background-color: #EC7063BB;
+    border-color: #78281F;
+    color: #78281F;
+}
+
+.skills-diagram .skill-10-2 {
+    width: 14em;
+    height: 14em;
+    line-height: 14em;
+    background-color: #F4D03FBB;
+    border-color: #7D6608;
+    color: #7D6608;
+}
+
+.skills-diagram .skill-10-3 {
+    width: 14em;
+    height: 14em;
+    line-height: 14em;
+    background-color: #48C9B0BB;
+    border-color: #0E6251;
+    color: #0E6251;
+}

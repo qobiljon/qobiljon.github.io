@@ -270,6 +270,8 @@ p#welcome_text {
     display: block;
     font-size: 24px;
     color: var(--header-color);
+    margin-top: 64px;
+    margin-bottom: 30px;
 }
 
 .section_light_bg {
@@ -290,6 +292,21 @@ p#welcome_text {
 
 .skill {
     display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.skill img {
+    display: block;
+    width: 96px;
+    height: 96px;
+}
+
+.skill span {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 
