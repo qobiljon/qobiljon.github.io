@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="css/css-circular-prog-bar.css">
     <script src="index.js"></script>
 </head>
-<body>
-<header id="header">
+<body id="start">
+<header>
     <ul id="left_nav">
-        <li><span id="name">KOBILJON</span></li>
+        <li><a id="name" href="#start">KOBILJON</a></li>
     </ul>
     <ul class="right_nav" id="right_nav">
-        <li><a href="#header" class="active">HOME</a></li>
         <li><a href="#skills_div">SKILLS</a></li>
         <li><a href="#portfolio_div">PORTFOLIO</a></li>
         <li><a href="#awards_div">AWARDS</a></li>
@@ -37,8 +36,8 @@
                 Researcher. Software Engineer. Competitive Programmer.
             </p>
             <br>
-            <a href="assets/documents/kobiljon_RESUME.docx" class="button-light">MY RESUME</a>
-            <a href="assets/documents/kobiljon_CV.docx" class="button-light">MY CV</a>
+            <a href="assets/documents/resume/kobiljon_RESUME.pdf" class="button-light">MY RESUME</a>
+            <a href="assets/documents/resume/kobiljon_CV.pdf" class="button-light">MY CV</a>
             <a href="mailto:kobiljon@nsl.inha.ac.kr" class="button-light">EMAIL ME</a>
         </div>
     </div>
@@ -225,37 +224,55 @@
             <div class="project_div">
                 <img class="project_img project_description" src="assets/documents/EasyTrack_Mobisys_2019_Posters_session.png" alt="EasyTrack">
                 <span class="project_description">EasyTrack - Orchestrating Large-scale Mobile User Experimental Studies (poster)</span>
+                <span class="project_notes">- MobiSys'19 Proceedings</span>
                 <a class="project_url" href="assets/documents/EasyTrack_Mobisys_2019_Posters_session.pdf">PDF</a>,
-                <a class="project_url" href="https://dl.acm.org/doi/10.1145/3307334.3328633">ACM DL</a>,
+                <a class="project_url" href="https://dl.acm.org/doi/10.1145/3307334.3328633">ACM Digital Library</a>,
+                <a class="project_url" href="https://github.com/Qobiljon/EasyTrack_Server">GitHub</a>,
+                <a class="project_url" href="http://etdb.myvnc.com">Dashboard</a>,
+                <a class="project_url" href="https://play.google.com/store/apps/details?id=inha.nsl.easytrack">Google Play Store</a>
+            </div>
+            <div class="project_div">
+                <img class="project_img project_description" src="assets/documents/MindForecaster_CHI2020_proceedings.png" alt="MindForecaster">
+                <span class="project_description">Toward Future-Centric Personal Informatics: Expecting Stressful Events and Preparing Personalized Interventions in Stress Management</span>
+                <span class="project_notes">- CHI'20 Proceedings</span>
+                <a class="project_url" href="assets/documents/MindForecaster_CHI2020_proceedings.pdf">PDF</a>,
+                <a class="project_url" href="https://github.com/Qobiljon/MF_AndroidClient">GitHub</a>,
+                <a class="project_url" href="https://play.google.com/store/apps/details?id=kr.ac.inha.nsl.mindforecaster">Google Play Store</a>
+            </div>
+            <div class="project_div">
+                <img class="project_img project_description" src="assets/documents/IMSP_KICS_2020_Proceedings.png" alt="IMSP">
+                <span class="project_description">IMSP: an Intelligent Mobile Sensing Platform for Automatized Abnormal Behavior Detection</span>
+                <span class="project_notes">- KICS Winter Conference Proceedings</span>
+                <a class="project_url" href="assets/documents/IMSP_KICS_2020_Proceedings.pdf">PDF</a>,
                 <a class="project_url" href="https://github.com/Qobiljon/EasyTrack_Server">GitHub</a>
             </div>
             <div class="project_div">
-                <img class="project_img project_description" src="assets/documents/EasyTrack_Mobisys_2019_Posters_session.png" alt="EasyTrack">
-                <span class="project_description">EasyTrack - Orchestrating Large-scale Mobile User Experimental Studies (poster)</span>
-                <a class="project_url" href="assets/documents/EasyTrack_Mobisys_2019_Posters_session.pdf">PDF</a>,
-                <a class="project_url" href="https://dl.acm.org/doi/10.1145/3307334.3328633">ACM DL</a>,
-                <a class="project_url" href="https://github.com/Qobiljon/EasyTrack_Server">GitHub</a>
+                <img class="project_img project_description" src="assets/documents/STDD_Sensors-708231.png" alt="STDD">
+                <span class="project_description">STDD: Short-Term Depression Detection with Passive Sensing</span>
+                <span class="project_notes">- IEEE Sensors Journal Publication</span>
+                <a class="project_url" href="assets/documents/STDD_Sensors-708231.pdf">PDF</a>,
+                <a class="project_url" href="https://github.com/nnarziev/YouNoOne_Server">GitHub</a>
             </div>
             <div class="project_div">
-                <img class="project_img project_description" src="assets/documents/EasyTrack_Mobisys_2019_Posters_session.png" alt="EasyTrack">
-                <span class="project_description">EasyTrack - Orchestrating Large-scale Mobile User Experimental Studies (poster)</span>
-                <a class="project_url" href="assets/documents/EasyTrack_Mobisys_2019_Posters_session.pdf">PDF</a>,
-                <a class="project_url" href="https://dl.acm.org/doi/10.1145/3307334.3328633">ACM DL</a>,
-                <a class="project_url" href="https://github.com/Qobiljon/EasyTrack_Server">GitHub</a>
+                <img class="project_img project_description" src="assets/documents/DARCA__Dynamic_Association_Regulator_Considering_Airtime_over_SDN_enabled_WiFi.jpg" alt="DARCA">
+                <span class="project_description">DARCA: Dynamic Association Regulator Considering Airtime over SDN-enabled WiFi</span>
+                <a class="project_url" href="assets/documents/DARCA__Dynamic_Association_Regulator_Considering_Airtime_over_SDN_enabled_WiFi.pdf">PDF</a>,
+                <a class="project_url" href="https://github.com/Qobiljon/ns3-lvap-aps-same-mac">GitHub</a>
             </div>
             <div class="project_div">
-                <img class="project_img project_description" src="assets/documents/EasyTrack_Mobisys_2019_Posters_session.png" alt="EasyTrack">
-                <span class="project_description">EasyTrack - Orchestrating Large-scale Mobile User Experimental Studies (poster)</span>
-                <a class="project_url" href="assets/documents/EasyTrack_Mobisys_2019_Posters_session.pdf">PDF</a>,
-                <a class="project_url" href="https://dl.acm.org/doi/10.1145/3307334.3328633">ACM DL</a>,
-                <a class="project_url" href="https://github.com/Qobiljon/EasyTrack_Server">GitHub</a>
+                <img class="project_img project_description" src="assets/documents/haruasd.png" alt="오늘하루">
+                <span class="project_description">오늘하루: Cognitive Behavioral Therapy Program to Improve Various Psychological Difficulties</span>
+                <span class="project_notes">- Developed by the request of Yonsei University</span>
+                <a class="project_url" href="http://haruasd.net/">Website</a>,
+                <a class="project_url" href="https://play.google.com/store/apps/details?id=net.haruasd.app.haruasd">Google Play Store</a>
+                <a class="project_url" href="https://apps.apple.com/kr/app/%EC%98%A4%EB%8A%98%ED%95%98%EB%A3%A8/id1478386374">Apple AppStore</a>
             </div>
             <div class="project_div">
-                <img class="project_img project_description" src="assets/documents/EasyTrack_Mobisys_2019_Posters_session.png" alt="EasyTrack">
-                <span class="project_description">EasyTrack - Orchestrating Large-scale Mobile User Experimental Studies (poster)</span>
-                <a class="project_url" href="assets/documents/EasyTrack_Mobisys_2019_Posters_session.pdf">PDF</a>,
-                <a class="project_url" href="https://dl.acm.org/doi/10.1145/3307334.3328633">ACM DL</a>,
-                <a class="project_url" href="https://github.com/Qobiljon/EasyTrack_Server">GitHub</a>
+                <img class="project_img project_description" src="assets/documents/Academic_Schedulling_Tool.png" alt="Academic Scheduling Tool">
+                <span class="project_description">Academic Scheduling Tool: A Flexible Timetable Generator Application for Academic Institutions</span>
+                <span class="project_notes">- Hackathon Project</span>
+                <a class="project_url" href="assets/documents/Academic_Scheduling_Tool_Winner_Certificate.jpg">Winner certificate</a>,
+                <a class="project_url" href="https://github.com/Qobiljon/Timetable">GitHub</a>
             </div>
         </div>
     </div>

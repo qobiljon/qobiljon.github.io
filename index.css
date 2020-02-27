@@ -17,6 +17,7 @@
 
 /* body and content */
 body {
+    padding-top: 60px;
     font-family: 'Roboto', sans-serif;
     background: var(--main-background-color);
     color: var(--text-color-dark);
@@ -27,9 +28,12 @@ body {
 
 /* header and footer */
 header {
+    position: fixed;
     height: 60px;
+    width: 100%;
+    top: 0;
+    z-index: 3;
     background-color: var(--header-color);
-    position: relative;
     display: block;
 }
 
@@ -75,9 +79,14 @@ header ul#right_nav {
     padding-top: 5px;
 }
 
-header ul li span#name {
+header ul li a#name {
     font-size: 24px;
     color: var(--text-color-light);
+}
+
+header ul li a#name:hover {
+    color: var(--div-bg-color-dark);
+    transition: 200ms;
 }
 
 footer {
@@ -185,7 +194,6 @@ footer ul li a img {
 }
 
 .content_div {
-    display: block;
     width: 75%;
     margin: 0 auto;
 }
@@ -252,8 +260,10 @@ p#welcome_text {
 
 .project_div {
     display: inline-block;
-    margin: 20px;
+    vertical-align: top;
+    padding: 20px;
     width: 300px;
+    height: 300px;
     text-align: start;
 }
 
@@ -267,6 +277,12 @@ p#welcome_text {
     display: inline-block;
     text-decoration: none;
     color: var(--text-color-url);
+}
+
+.project_notes {
+    display: block;
+    font-style: italic;
+    color: var(--text-color-light);
 }
 
 .project_img {
