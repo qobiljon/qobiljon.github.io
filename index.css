@@ -18,11 +18,12 @@
 /* body and content */
 body {
     padding-top: 60px;
+    padding-bottom: 60px;
     font-family: 'Roboto', sans-serif;
     background: var(--main-background-color);
     color: var(--text-color-dark);
     margin: 0;
-    min-width: 1000px;
+    min-width: 600px;
 }
 
 
@@ -35,6 +36,7 @@ header {
     z-index: 3;
     background-color: var(--header-color);
     display: block;
+    min-width: 600px;
 }
 
 header a, footer a {
@@ -64,10 +66,6 @@ header li a:hover, footer li a:hover {
     transition: 200ms;
 }
 
-footer {
-    padding-bottom: 40px;
-}
-
 header ul#left_nav {
     float: left;
     padding-top: 2px;
@@ -89,15 +87,23 @@ header ul li a#name:hover {
     transition: 200ms;
 }
 
+header ul li a#name img {
+    width: 24px;
+    height: 24px;
+}
+
 footer {
+    padding-bottom: 40px;
+    width: 100%;
+    z-index: 3;
     clear: both;
-    height: 32px;
+    height: 18px;
     background-color: var(--header-color);
-    position: relative;
+    position: fixed;
     display: block;
     text-align: center;
-    padding-top: 10px;
     bottom: 0;
+    min-width: 600px;
 }
 
 footer ul li a img {
