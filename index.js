@@ -1,9 +1,9 @@
 let modal, modalImg, captionText;
 
 document.addEventListener("DOMContentLoaded", () => {
-    modal = document.getElementById("myModal");
-    modalImg = document.getElementById("img01");
-    captionText = document.getElementById("caption");
+    modal = document.getElementById("imageViewerModalDiv");
+    modalImg = document.getElementById("imageViewerModalImageView");
+    captionText = document.getElementById("modalViewCaption");
 });
 
 function copyEmailToClipboard() {
