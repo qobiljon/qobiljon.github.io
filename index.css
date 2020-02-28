@@ -459,3 +459,10 @@ p#welcome_text {
         width: 100%;
     }
 }
+
+/* contact me section */
+#arrows_down_contact_me {
+    width: 256px;
+    height: 64px;
+    padding: 10px;
+}
