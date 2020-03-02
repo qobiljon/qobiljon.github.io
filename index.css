@@ -126,7 +126,7 @@ footer ul li a img {
     z-index: 1;
     left: 50%;
     transform: translateX(-25%);
-    bottom: 30px;
+    bottom: 60px;
 }
 
 #snackbar.show {
@@ -141,7 +141,7 @@ footer ul li a img {
         opacity: 0;
     }
     to {
-        bottom: 30px;
+        bottom: 60px;
         opacity: 1;
     }
 }
@@ -152,14 +152,14 @@ footer ul li a img {
         opacity: 0;
     }
     to {
-        bottom: 30px;
+        bottom: 60px;
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeout {
     from {
-        bottom: 30px;
+        bottom: 60px;
         opacity: 1;
     }
     to {
@@ -170,7 +170,7 @@ footer ul li a img {
 
 @keyframes fadeout {
     from {
-        bottom: 30px;
+        bottom: 60px;
         opacity: 1;
     }
     to {

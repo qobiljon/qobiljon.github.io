@@ -14,6 +14,14 @@ function copyEmailToClipboard() {
     });
 }
 
+function copySkypeIdToClipboard() {
+    navigator.clipboard.writeText("live:qobiljon.toshnazarov_1").then(function () {
+        showToast("Skype ID has been copied to clipboard successfully!");
+    }, function () {
+        showToast("Unable to copy Skype ID to your clipboard. :-(");
+    });
+}
+
 function showToast(message) {
     const toast = document.getElementById("snackbar");
     toast.className = "show";
