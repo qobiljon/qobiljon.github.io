@@ -222,6 +222,20 @@ img#avatar {
     margin-block-start: 0;
 }
 
+div.education {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+}
+
+.education_title {
+    display: block;
+}
+
+.education_achievements_ul {
+    text-align: start;
+}
+
 .button {
     margin-left: 20px;
     margin-right: 20px;
