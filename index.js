@@ -1,9 +1,15 @@
+// Initialization function
 $(document).ready(function () {
   // Set up Google Analytics
-  setUpGA4();
+  initGoogleAnalytics();
+
+  // Set up UI event handlers
+  $('#navbar .hamburger').on('click', btnNavbarControlClick);
+  $('#btnSkype').on('click', btnSkypeClick);
 });
 
-function setUpGA4() {
+// Function that sets up Google Analytics
+function initGoogleAnalytics() {
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
@@ -14,36 +20,29 @@ function setUpGA4() {
   clicky_site_ids.push(101239814);
 }
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+// UI event handlers, e.g., button clicks
+function btnNavbarControlClick() {
+  if ($('#navbar').hasClass('expanded')) {
+    $('#navbar').removeClass('expanded');
   } else {
-    x.className = "topnav";
+    $('#navbar').addClass('expanded');
   }
 }
 
-function copyEmailToClipboard() {
-  navigator.clipboard.writeText("kobiljon@nsl.inha.ac.kr").then(function () {
-    showToast("Email address has been copied to clipboard successfully!");
+function btnSkypeClick() {
+  var skypeId = $('#btnSkype').prop('title');
+  navigator.clipboard.writeText(skypeId).then(function () {
+    showToast(`Skype ID "${skypeId}" copied to your clipboard!`);
   }, function () {
-    showToast("Unable to copy email address to your clipboard. :-(");
+    showToast(`Failed to copy Skype ID "${skypeId}" to your clipboard!`);
   });
 }
 
-function copySkypeIdToClipboard() {
-  navigator.clipboard.writeText("live:qobiljon.toshnazarov_1").then(function () {
-    showToast("Skype ID has been copied to clipboard successfully!");
-  }, function () {
-    showToast("Unable to copy Skype ID to your clipboard. :-(");
-  });
-}
-
+// Other utility functions
 function showToast(message) {
-  const toast = document.getElementById("snackbar");
-  toast.className = "show";
-  toast.innerText = message;
+  $('#snackbar').text(message);
+  $('#snackbar').addClass('show');
   setTimeout(function () {
-    toast.className = toast.className.replace("show", "");
-  }, 3000);
+    $('#snackbar').removeClass('show');
+  }, 5000);
 }

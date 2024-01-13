@@ -12,9 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Icon library e.g., hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -30,25 +30,31 @@
 
 <body>
 
-    <!-- Responsive navbar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
-    <div class="topnav" id="myTopnav">
+    <header>
+        <!-- Navbar https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <div id="navbar">
 
-        <!-- Navbar -->
-        <a class="active">Home</a>
-        <a>Research Areas</a>
-        <a>Experience</a>
-        <a>Projects Collaboration</a>
-        <a>Skills</a>
-        <a>Awards</a>
-        <a>Opening Positions</a>
-        <a>Contact</a>
+            <!-- Navbar items -->
+            <a class="active">Home</a>
+            <a>Research Areas</a>
+            <a>Experience</a>
+            <a>Projects Collaboration</a>
+            <a>Skills</a>
+            <a>Awards</a>
+            <a>Opening Positions</a>
+            <a>Contact</a>
 
-        <!-- Menu button that collapses the navbar -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+            <!-- Hamburger button that shrinks and expands the navbar items list -->
+            <a class="hamburger">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
 
+    <!-- Div for toast messages -->
+    <div id="snackbar">Some text some message..</div>
+
+    <!-- Body part of the webpage -->
     <div id="content">
 
         <!-- Avatar at the top -->
@@ -61,25 +67,35 @@
     </div>
 
     <footer>
-        <ul>
-            <li>
-                <a href="https://scholar.google.com/citations?user=CQp5uugAAAAJ&hl=en"><img
-                        src="assets/images/scholar64.png" alt="Google Scholar"></a>
-            </li>
-            <li>
-                <a href="https://github.com/Qobiljon"><img src="assets/images/github64.png" alt="Github"></a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/qobiljon"><img src="assets/images/linkedin64.ico" alt="Linkedin"></a>
-            </li>
-            <li>
-                <a onclick="copySkypeIdToClipboard()" title="live:qobiljon.toshnazarov_1"><img
-                        src="assets/images/skype64.ico" alt="Skype"></a>
-            </li>
-            <li>
-                <a href="mailto:kobiljon@nsl.inha.ac.kr"><img src="assets/images/email64.ico" alt="Email"></a>
-            </li>
-        </ul>
+
+        <!-- Bottom bar -->
+        <div id="bottombar">
+
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?user=CQp5uugAAAAJ&hl=en">
+                <img src="assets/images/scholar.svg" alt="Google Scholar">
+            </a>
+
+            <!-- Github -->
+            <a href="https://github.com/Qobiljon">
+                <img src="assets/images/github.svg" alt="Github">
+            </a>
+
+            <!-- Linkedin -->
+            <a href="https://linkedin.com/in/qobiljon">
+                <img src="assets/images/linkedin.svg" alt="Linkedin">
+            </a>
+
+            <!-- Skype -->
+            <a title="live:.cid.48e68512881e9222" id="btnSkype">
+                <img src="assets/images/skype.svg" alt="Skype">
+            </a>
+
+            <!-- Gmail -->
+            <a href="mailto:kobiljon@nsl.inha.ac.kr">
+                <img src="assets/images/gmail.svg" alt="Gmail">
+            </a>
+        </div>
     </footer>
 </body>
 
