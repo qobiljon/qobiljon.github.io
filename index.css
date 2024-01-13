@@ -100,24 +100,22 @@
 /* Bottom bar style */
 
 #bottombar {
-  padding-top: 16px;
-  padding-bottom: 42px;
+  padding: 10px;
   width: 100%;
   z-index: 3;
   clear: both;
-  height: 18px;
   background-color: var(--bottombar-bg);
   position: fixed;
   display: block;
   text-align: center;
   bottom: 0;
+  min-width: 300px;
 }
 
 #bottombar a {
   color: var(--primar);
   text-decoration: none;
 
-  display: inline-block;
   margin-left: 20px;
   cursor: pointer;
 }
@@ -130,6 +128,11 @@
 #bottombar a img {
   width: 32px;
   height: 32px;
+}
+
+#bottombar a img:hover {
+  -webkit-filter: invert(.75);
+  filter: invert(.75);
 }
 
 
@@ -165,6 +168,7 @@ html {
 body {
   background-color: var(--body-bg);
   color: var(--black);
+  min-width: 300px;
 }
 
 #avatar {
