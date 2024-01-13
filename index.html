@@ -5,8 +5,9 @@
 
     <!-- Website metadata -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dr. Kobiljon's Personal Website</title>
-    <!-- <link rel="shortcut icon" href="assets/favicon.ico"> -->
+    <link rel="shortcut icon" href="assets/favicon.svg">
 
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -35,7 +36,10 @@
         <div id="navbar">
 
             <!-- Navbar items -->
-            <a class="active">Home</a>
+            <a class="active">
+                <img src="assets/favicon.svg" alt="Brand">
+                Home
+            </a>
             <a>Research Areas</a>
             <a>Experience</a>
             <a>Projects Collaboration</a>
@@ -52,13 +56,15 @@
     </header>
 
     <!-- Div for toast messages -->
-    <div id="snackbar">Some text some message..</div>
+    <div id="snackbarDiv">
+        <span id="snackbarSpan"></span>
+    </div>
 
     <!-- Body part of the webpage -->
     <div id="content">
 
         <!-- Avatar at the top -->
-        <img id="avatar" src="assets/images/avatar.jpeg" alt="Avatar">
+        <img id="avatar" src="assets/face.jpeg" alt="Face">
 
         <!-- Name (+title) -->
         <div id="nameContainer">
@@ -73,27 +79,27 @@
 
             <!-- Google Scholar -->
             <a href="https://scholar.google.com/citations?user=CQp5uugAAAAJ&hl=en">
-                <img src="assets/images/scholar.svg" alt="Google Scholar">
+                <img src="assets/social_icons/scholar.svg" alt="Google Scholar">
             </a>
 
             <!-- Github -->
             <a href="https://github.com/Qobiljon">
-                <img src="assets/images/github.svg" alt="Github">
+                <img src="assets/social_icons/github.svg" alt="Github">
             </a>
 
             <!-- Linkedin -->
             <a href="https://linkedin.com/in/qobiljon">
-                <img src="assets/images/linkedin.svg" alt="Linkedin">
+                <img src="assets/social_icons/linkedin.svg" alt="Linkedin">
             </a>
 
             <!-- Skype -->
             <a title="live:.cid.48e68512881e9222" id="btnSkype">
-                <img src="assets/images/skype.svg" alt="Skype">
+                <img src="assets/social_icons/skype.svg" alt="Skype">
             </a>
 
             <!-- Gmail -->
             <a href="mailto:kobiljon@nsl.inha.ac.kr">
-                <img src="assets/images/gmail.svg" alt="Gmail">
+                <img src="assets/social_icons/gmail.svg" alt="Gmail">
             </a>
         </div>
     </footer>

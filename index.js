@@ -40,9 +40,9 @@ function btnSkypeClick() {
 
 // Other utility functions
 function showToast(message) {
-  $('#snackbar').text(message);
-  $('#snackbar').addClass('show');
+  $('#snackbarSpan').text(message);
+  $('#snackbarDiv').css('visibility', 'visible');
   setTimeout(function () {
-    $('#snackbar').removeClass('show');
+    $('#snackbarDiv').css('visibility', 'hidden');
   }, 5000);
 }

@@ -13,8 +13,11 @@
   --navbar-btn-hover-bg: var(--body-bg);
   --navbar-btn-hover-text: var(--black);
 
-  /* #bottombar colors */
+  /* Bottom bar colors */
   --bottombar-bg: #000;
+
+  /* Snackbar colors */
+  --snackbar-bg: #333;
 }
 
 
@@ -37,21 +40,19 @@
   cursor: pointer;
 }
 
-#navbar a:hover {
-  background-color: var(--navbar-btn-hover-bg);
-  color: var(--navbar-btn-hover-text);
-}
-
-#navbar a.active {
-  background-color: var(--navbar-btn-active-bg);
-  color: var(--navbar-btn-active-text);
+#navbar a img {
+  width: 32px;
+  height: 32px;
 }
 
 #navbar .hamburger {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+
+  /* Navbar collapsed */
+
   #navbar a:not(:first-child) {
     display: none;
   }
@@ -60,9 +61,9 @@
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 600px) {
+  /* Navbar expanded */
+
   #navbar.expanded {
     position: relative;
   }
@@ -71,7 +72,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    color: var(--navbar-text);
+    background-color: var(--navbar-btn-active-bg);
+    color: var(--navbar-btn-active-text);
   }
 
   #navbar.expanded a {
@@ -80,6 +82,8 @@
     text-align: left;
   }
 }
+
+
 
 /* Bottom bar style */
 
@@ -117,33 +121,30 @@
 }
 
 
+
 /* Snackbar (toast) style */
 
-#snackbar {
+#snackbarDiv {
+  width: 100%;
   visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #333;
-  color: #fff;
   text-align: center;
-  border-radius: 2px;
   padding: 16px;
   position: fixed;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-25%);
   bottom: 60px;
+  z-index: 1;
 }
 
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+#snackbarSpan {
+  display: inline-block;
+  background-color: var(--snackbar-bg);
+  color: var(--white);
+  border-radius: 2px;
+  padding: 16px;
 }
 
 
 
-/* Other generic element styles */
+/* Body elements */
 
 html {
   font-family: 'Roboto', 'Helvetica', sans-serif;
