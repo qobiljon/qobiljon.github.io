@@ -26,25 +26,15 @@
 
 #navbar {
   background-color: var(--navbar-bg);
-  overflow: hidden;
 }
 
 #navbar a {
-  float: left;
-  display: block;
   color: var(--navbar-text);
-  text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  cursor: pointer;
-  border-top: 1px solid var(--navbar-bg);
-  border-bottom: 1px solid var(--navbar-bg);
-}
-
-#navbar a img {
-  width: 22px;
-  height: 22px;
+  /* cursor: pointer; */
+  /* border-top: 1px solid var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-bg); */
 }
 
 #navbar a:hover {
@@ -99,37 +89,6 @@
 
 /* Bottom bar style */
 
-#bottombar {
-  padding: 10px;
-  width: 100%;
-  z-index: 3;
-  clear: both;
-  background-color: var(--bottombar-bg);
-  position: fixed;
-  display: block;
-  text-align: center;
-  bottom: 0;
-  min-width: 300px;
-}
-
-#bottombar a {
-  color: var(--primar);
-  text-decoration: none;
-
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-#bottombar a:hover {
-  color: var(--div-bg-color-dark);
-  transition: 200ms;
-}
-
-#bottombar a img {
-  width: 32px;
-  height: 32px;
-}
-
 #bottombar a img:hover {
   -webkit-filter: invert(.75);
   filter: invert(.75);
@@ -139,7 +98,7 @@
 
 /* Snackbar (toast) style */
 
-#snackbarDiv {
+#snackbar_div {
   width: 100%;
   visibility: hidden;
   text-align: center;
@@ -149,7 +108,7 @@
   z-index: 1;
 }
 
-#snackbarSpan {
+#snackbar_span {
   display: inline-block;
   background-color: var(--snackbar-bg);
   color: var(--white);
@@ -165,28 +124,11 @@ html {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-body {
-  background-color: var(--body-bg);
-  color: var(--black);
-  min-width: 300px;
-}
-
-#avatar {
+#profile_picture {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-  margin-top: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3)
-}
-
-#nameContainer {
-  width: 100%;
-  margin-top: 20px;
-  text-align: center;
-}
-
-#nameContainer span {
-  font-size: 24px;
 }
