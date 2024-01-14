@@ -1,12 +1,23 @@
+$(document).ready(function () {
+  // Set up UI event handlers
+  $('#btn_skype').on('click', btnSkypeClick);
+  $('#btn_mobile_navbar').on('click', btnMobileNavbarClick);
+});
+
 function btnSkypeClick() {
-  var skypeId = $('#btnSkype').prop('title');
+  var skypeId = $('#btn_skype').prop('title');
   navigator.clipboard.writeText(skypeId).then(function () {
-    showToast(`Skype ID "${skypeId}" copied to your clipboard!`);
+    alert(`Skype ID "${skypeId}" copied to your clipboard!`);
   }, function () {
-    showToast(`Failed to copy Skype ID "${skypeId}" to your clipboard!`);
+    alert(`Failed to copy Skype ID "${skypeId}" to your clipboard!`);
   });
 }
 
-function toggleNavbarMobile() {
-  // TODO: implement this
+function btnMobileNavbarClick() {
+  // Toggle the mobile navbar
+  if ($('#div_mobile_navbar').hasClass('hidden')) {
+    $('#div_mobile_navbar').removeClass('hidden');
+  } else {
+    $('#div_mobile_navbar').addClass('hidden');
+  }
 }
