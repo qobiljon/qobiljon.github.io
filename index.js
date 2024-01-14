@@ -1,34 +1,3 @@
-// Initialization function
-$(document).ready(function () {
-  // Set up Google Analytics
-  initGoogleAnalytics();
-
-  // Set up UI event handlers
-  $('#navbar .hamburger').on('click', btnNavbarControlClick);
-  $('#btnSkype').on('click', btnSkypeClick);
-});
-
-// Function that sets up Google Analytics
-function initGoogleAnalytics() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'UA-159388383-1');
-  var clicky_site_ids = clicky_site_ids || [];
-  clicky_site_ids.push(101239814);
-}
-
-// UI event handlers, e.g., button clicks
-function btnNavbarControlClick() {
-  if ($('#navbar').hasClass('expanded')) {
-    $('#navbar').removeClass('expanded');
-  } else {
-    $('#navbar').addClass('expanded');
-  }
-}
-
 function btnSkypeClick() {
   var skypeId = $('#btnSkype').prop('title');
   navigator.clipboard.writeText(skypeId).then(function () {
@@ -38,11 +7,6 @@ function btnSkypeClick() {
   });
 }
 
-// Other utility functions
-function showToast(message) {
-  $('#snackbar_span').text(message);
-  $('#snackbar_div').css('visibility', 'visible');
-  setTimeout(function () {
-    $('#snackbar_div').css('visibility', 'hidden');
-  }, 5000);
+function toggleNavbarMobile() {
+  // TODO: implement this
 }
