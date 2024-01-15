@@ -58,8 +58,8 @@
             </div>
 
             <!-- Dark mode toggle button -->
-            <a type="button"
-                class="bg-gray-700 px-2 py-1 rounded-full border-2 border-solid border-gray-600 cursor-default lg:order-3">
+            <a type="button" id="btn_dark_mode"
+                class="bg-gray-700 px-2 py-1 rounded-full border-2 border-solid border-gray-600 cursor-pointer lg:order-3">
                 <!-- Light mode icon -->
                 <svg class="h-6 w-6 fill-yellow-200 dark:fill-gray-900 inline-block" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
@@ -74,7 +74,7 @@
 
             <!-- Show / hide menu button -->
             <a type="button" id="btn_mobile_navbar"
-                class="inline-flex items-center justify-center rounded-lg md:hidden">
+                class="inline-flex items-center justify-center rounded-lg md:hidden cursor-pointer">
                 <svg class="w-6 h-6" viewBox="0 0 24 24" id="svg_collapsed_state">
                     <path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m1.4 3.9h21.2m-21.2 8.5h21.2m-21.2 8.5h21.2" />
@@ -116,6 +116,7 @@
     <div class="mt-4 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
         <!-- Profile image, name, position, and short bio -->
+        <h1 class="text-2xl mt-4 mb-1 text-blue-800 dark:text-blue-300">Introduction</h1>
         <div class="flex justify-center items-center">
             <div
                 class="flex flex-col w-full items-center border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800">
@@ -204,6 +205,7 @@
         </div>
 
         <!-- Education (reverse chronological order) -->
+        <h1 class="text-2xl mt-4 mb-1 text-blue-800 dark:text-blue-300">Education</h1>
         <div
             class="flex justify-around w-full border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4 mt-2">
 
@@ -230,6 +232,7 @@
         </div>
 
         <!-- Experience (reverse chronological order) -->
+        <h1 class="text-2xl mt-4 mb-1 text-blue-800 dark:text-blue-300">Career</h1>
         <div
             class="flex flex-wrap justify-around w-full border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800 p-4 mt-2">
 
@@ -265,7 +268,7 @@
         </div>
 
         <!-- Next button (goes to research) -->
-        <div class="mt-2 flex justify-end">
+        <div class="mt-4 flex justify-end">
             <a type="button" href="research.html" title="Go to research tab"
                 class="ps-3 pe-2 py-1 cursor-pointer rounded-full border-2 border-solid border-gray-600 dark:hover:border-blue-700 hover:bg-blue-300 dark:hover:bg-blue-600">
                 <span class="text-gray-600 dark:text-gray-200">Research works</span>
