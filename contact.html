@@ -115,41 +115,71 @@
     <!-- Webpage content -->
     <div class="mt-4 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
+        <!-- Profile image, name, position, and short bio -->
+        <div class="flex justify-center items-center">
+            <div
+                class="flex flex-col w-full items-center border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800">
+
+                <!-- Left column: Location -->
+                <img class="rounded-lg md:h-auto md:w-64 md:rounded-none md:rounded-s-lg"
+                    src="assets/contact-location.png" alt="Location">
+
+                <!-- Right column: Name, position, bio, links -->
+                <div class="flex flex-col p-4 leading-normal">
+
+                    <!-- Name -->
+                    <h5 class="text-2xl tracking-tight text-gray-900 dark:text-white">
+                        Room 560-A, A-dong, Ujeong-ro 72, Naju-si, Jeollanam-do, Republic of Korea
+                    </h5>
+                    <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
+
+                    <!-- Location -->
+                    <h6 class="flex flex-col justify-between text-gray-900 dark:text-white">
+                        전라남도 나주시 우정로 72 A동 560-A호
+                        <a class="inline-block text-blue-600 dark:text-white:200"
+                            href="https://map.naver.com/p/search/%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84%20%EB%82%98%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%A0%95%EB%A1%9C%2072%20A%EB%8F%99%20560-A%ED%98%B8/address/14113893.2445383,4167070.9585622,%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84%20%EB%82%98%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%A0%95%EB%A1%9C%2072,new?c=19.00,0,0,0,dh&isCorrectAnswer=true">
+                            [네이버 지도]
+                        </a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+
         <!-- Linkedin -->
-        <div class="mt-2">
+        <div class="mt-2 block mt-4">
             <a href="https://linkedin.com/in/qobiljon" title="linkedin.com/in/qobiljon" target="_blank"
-                class="flex align-middle space-x-1">
-                <svg class="w-6 h-6 fill-gray-100 hover:fill-blue-400 cursor-pointer inline-block" version="1.2"
-                    viewBox="0 0 500 500" width="500" height="500">
+                class="align-middle space-x-1">
+                <svg class="inline-block w-10 h-10 fill-blue-600 dark:fill-blue-200 hover:fill-blue-400 cursor-pointer"
+                    version="1.2" viewBox="0 0 500 500" width="500" height="500">
                     <path id="Layer" fill-rule="evenodd" class="s0"
                         d="m0 104c0-57.4 46.6-104 104-104h292c57.4 0 104 46.6 104 104v292c0 57.4-46.6 104-104 104h-292c-57.4 0-104-46.6-104-104zm104.2 291.8h62.5v-229.1h-62.5zm67.7-292.4c0-20.3-16.3-36.7-36.5-36.7-20.1 0-36.4 16.4-36.4 36.7 0 20.4 16.3 36.8 36.4 36.8 20.2 0 36.5-16.4 36.5-36.8zm244.8 151.6c0-109.5-116.8-105.5-145.9-51.6v-36.8h-62.5v229.2h62.5v-116.8c0-64.8 83.4-70.2 83.4 0v116.8h62.5z" />
                 </svg>
-                <span class="text-gray-200">LinkedIn</span>
+                <span class="inline-block align-middle text-gray-600 dark:text-gray-200 text-lg">LinkedIn</span>
             </a>
         </div>
 
         <!-- Skype -->
-        <div class="mt-2">
-            <a type="button" id="btn_skype" title="live:.cid.48e68512881e9222" class="flex align-middle space-x-1">
-                <svg class="w-6 h-6 fill-gray-100 hover:fill-blue-400 cursor-pointer inline-block" version="1.2"
-                    viewBox="0 0 500 500" width="500" height="500">
+        <div class="mt-2 block">
+            <a type="button" id="btn_skype" title="live:.cid.48e68512881e9222"
+                class="align-middle space-x-1 cursor-pointer">
+                <svg class="inline-block w-10 h-10 fill-blue-600 hover:fill-blue-200 cursor-pointer inline-block"
+                    version="1.2" viewBox="0 0 500 500" width="500" height="500">
                     <path fill-rule="evenodd" class="a"
                         d="m293.4 479.7c-160.4 30.6-301.5-109.6-272.6-271-74.3-120.9 64.9-262.3 186.2-188.1 159.1-29.9 300.2 108.6 271.9 270.4 74.8 120.8-64 262.4-185.5 188.7zm90.5-170.8c0-109.8-187.3-80.9-187.3-130.8 0-23.8 22.2-34.8 48.6-34.8 58.4 0 61.9 45.4 95.8 45.4 23.3 0 36.7-15.8 34.6-36-4.3-30.9-48.2-64.1-123.3-68.5-78.7-4.6-128.7 37.6-128.7 98.8 0 113 188.4 76.1 188.4 136.3 0 16.6-14.9 40.5-58.5 40.5-62.1 0-61.7-58.3-100.8-58.3-15.5 0-27.1 14.4-27.2 30.1-0.4 51.9 66.2 82.1 132.5 82.1 75.4 0 125.8-41.5 125.9-104.8z" />
                 </svg>
-                <span class="text-gray-200">Skype</span>
+                <span class="inline-block align-middle text-gray-600 dark:text-gray-200 text-lg">Skype</span>
             </a>
         </div>
 
         <!-- Email -->
-        <div class="mt-2">
-            <a href="mailto:kobiljon@nsl.inha.ac.kr" title="kobiljon@nsl.inha.ac.kr"
-                class="flex align-middle space-x-1">
-                <svg class="w-6 h-6 fill-gray-100 hover:fill-blue-400 cursor-pointer inline-block" version="1.2"
-                    viewBox="0 0 500 500" width="500" height="500">
+        <div class="mt-2 block">
+            <a href="mailto:kobiljon@nsl.inha.ac.kr" title="kobiljon@nsl.inha.ac.kr" class="align-middle space-x-1">
+                <svg class="inline-block w-10 h-10 fill-blue-600 hover:fill-blue-200 cursor-pointer inline-block"
+                    version="1.2" viewBox="0 0 500 500" width="500" height="500">
                     <path fill-rule="evenodd" class="a"
                         d="m250 500c-138.3 0-250-111.8-250-250 0-138.3 111.8-250 250-250 138.3 0 250 111.8 250 250 0 138.3-111.8 250-250 250zm-145.8-168.6c0 11.6 9.4 21 21 21h249.6c11.6 0 21-9.4 21-21v-164.6c0-11.6-9.4-21-21-21h-249.6c-11.6 0-21 9.4-21 21zm259.1-131.7v140.6h-227.1l0.3-140.6 113.5 78.8zm-5.5-41.7c-31.8 22.1-107.8 75.7-107.8 75.7l-108.4-75.7z" />
                 </svg>
-                <span class="text-gray-200">Email</span>
+                <span class="inline-block align-middle text-gray-600 dark:text-gray-200 text-lg">Email</span>
             </a>
         </div>
     </div>
