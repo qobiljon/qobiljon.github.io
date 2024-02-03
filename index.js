@@ -11,7 +11,7 @@ $(document).ready(function () {
 });
 
 function btnSkypeClick() {
-    var skypeId = $('#btn_skype').prop('title');
+    const skypeId = $('#btn_skype').prop('title');
     navigator.clipboard.writeText(skypeId).then(function () {
         alert(`Skype ID "${skypeId}" copied to your clipboard!`);
     }, function () {
@@ -20,25 +20,22 @@ function btnSkypeClick() {
 }
 
 function btnMobileNavbarClick() {
-    // Toggle the mobile navbar
-    if ($('#div_mobile_navbar').hasClass('hidden')) {
+    // Get the mobile navbar element (div)
+    const divMobileNavbar = $('#div_mobile_navbar');
 
+    // Toggle the mobile navbar visibility
+    if (divMobileNavbar.hasClass('hidden')) {
         // Show the mobile navbar
-        $('#div_mobile_navbar').removeClass('hidden');
-
-        // Put 'X' on the button
+        divMobileNavbar.removeClass('hidden');
+        // Put 'X' icon on the button
         $('#btn_mobile_navbar svg#svg_collapsed_state').addClass('hidden');
         $('#btn_mobile_navbar svg#svg_expanded_state').removeClass('hidden');
-
     } else {
-
         // Hide the mobile navbar
-        $('#div_mobile_navbar').addClass('hidden');
-
-        // Put 'hamburger' on the button
+        divMobileNavbar.addClass('hidden');
+        // Put 'hamburger' icon on the button
         $('#btn_mobile_navbar svg#svg_collapsed_state').removeClass('hidden');
         $('#btn_mobile_navbar svg#svg_expanded_state').addClass('hidden');
-
     }
 }
 
