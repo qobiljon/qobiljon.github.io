@@ -3,139 +3,139 @@
 
 <head>
 
-    <!-- Website metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dr. Kobiljon's Personal Website</title>
-    <link rel="shortcut icon" href="assets/favicon.svg">
+	<!-- Website metadata -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dr. Kobiljon's Personal Website</title>
+	<link rel="shortcut icon" href="assets/favicon.svg">
 
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- Tailwind CDN (development only) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+	<!-- Tailwind CDN (development only) -->
+	<script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Local js scripts and css styles -->
-    <script type="text/javascript" src="index.js"></script>
+	<!-- Local js scripts and css styles -->
+	<script type="text/javascript" src="index.js"></script>
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-700 font-sans pb-32">
 
 <!-- Navbar -->
 <nav class="bg-gray-800">
-    <div class="max-w-screen-xl flex items-center justify-between mx-auto px-3 py-3 md:pd-2">
+	<div class="max-w-screen-xl flex items-center justify-between mx-auto px-3 py-3 md:pd-2">
 
-        <!-- Logo (on left side) -->
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse lg:order-1 cursor-pointer">
-            <img class="h-8" src="assets/favicon.svg" alt="Logo">
-        </a>
+		<!-- Logo (on left side) -->
+		<a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse lg:order-1 cursor-pointer">
+			<img class="h-8" src="assets/favicon.svg" alt="Logo">
+		</a>
 
-        <!-- Navbar items for desktop browser (large landscape screen)  -->
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 lg:order-2">
-            <div class="sm:ml-6 sm:block">
-                <div class="flex space-x-4">
-                    <a href="index.html"
-                       class="text-gray-300 hover:bg-gray-700 hover:text-blue-400 rounded-md px-3 py-2 text-sm font-medium">
-                        Home
-                    </a>
-                    <a href="sw-engineering.html"
-                       class="text-gray-300 hover:bg-gray-700 hover:text-blue-400 rounded-md px-3 py-2 text-sm font-medium">
-                       SW Engineering
-                    </a>
-                    <a href="#" class="bg-gray-900 text-blue-400 rounded-md px-3 py-2 text-sm font-medium">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </div>
+		<!-- Navbar items for desktop browser (large landscape screen)  -->
+		<div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 lg:order-2">
+			<div class="sm:ml-6 sm:block">
+				<div class="flex space-x-4">
+					<a href="index.html"
+					   class="text-gray-300 hover:bg-gray-700 hover:text-blue-400 rounded-md px-3 py-2 text-sm font-medium">
+						Home
+					</a>
+					<a href="sw-engineering.html"
+					   class="text-gray-300 hover:bg-gray-700 hover:text-blue-400 rounded-md px-3 py-2 text-sm font-medium">
+					   SW Engineering
+					</a>
+					<a href="#" class="bg-gray-900 text-blue-400 rounded-md px-3 py-2 text-sm font-medium">
+						Contact
+					</a>
+				</div>
+			</div>
+		</div>
 
-        <!-- Dark mode toggle button -->
-        <a type="button" id="btn_dark_mode"
-           class="bg-gray-700 px-2 py-1 rounded-full border-2 border-solid border-gray-600 cursor-pointer md:order-3">
-            <!-- Light mode icon -->
-            <svg class="h-6 w-6 fill-yellow-200 dark:fill-gray-900 inline-block" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                      clip-rule="evenodd"/>
-            </svg>
-            <!-- Dark mode icon -->
-            <svg class="h-6 w-6 fill-gray-900 dark:fill-blue-300 inline-block" viewBox="0 0 20 20">
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-            </svg>
-        </a>
+		<!-- Dark mode toggle button -->
+		<a type="button" id="btn_dark_mode"
+		   class="bg-gray-700 px-2 py-1 rounded-full border-2 border-solid border-gray-600 cursor-pointer md:order-3">
+			<!-- Light mode icon -->
+			<svg class="h-6 w-6 fill-yellow-200 dark:fill-gray-900 inline-block" viewBox="0 0 20 20">
+				<path fill-rule="evenodd"
+					  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+					  clip-rule="evenodd"/>
+			</svg>
+			<!-- Dark mode icon -->
+			<svg class="h-6 w-6 fill-gray-900 dark:fill-blue-300 inline-block" viewBox="0 0 20 20">
+				<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+			</svg>
+		</a>
 
-        <!-- Show / hide menu button -->
-        <a type="button" id="btn_mobile_navbar"
-           class="inline-flex items-center justify-center rounded-lg md:hidden cursor-pointer">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" id="svg_collapsed_state">
-                <path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m1.4 3.9h21.2m-21.2 8.5h21.2m-21.2 8.5h21.2"/>
-            </svg>
-            <svg class="w-6 h-6 hidden" viewBox="0 0 24 24" id="svg_expanded_state">
-                <path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="m2 3l19 19m-19 0l19-19"/>
-            </svg>
-        </a>
-    </div>
+		<!-- Show / hide menu button -->
+		<a type="button" id="btn_mobile_navbar"
+		   class="inline-flex items-center justify-center rounded-lg md:hidden cursor-pointer">
+			<svg class="w-6 h-6" viewBox="0 0 24 24" id="svg_collapsed_state">
+				<path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					  d="m1.4 3.9h21.2m-21.2 8.5h21.2m-21.2 8.5h21.2"/>
+			</svg>
+			<svg class="w-6 h-6 hidden" viewBox="0 0 24 24" id="svg_expanded_state">
+				<path class="stroke-gray-100" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					  d="m2 3l19 19m-19 0l19-19"/>
+			</svg>
+		</a>
+	</div>
 
-    <div class="space-y-1 px-2 pb-3 pt-0 hidden" id="div_mobile_navbar">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="index.html"
-           class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
-            Home
-        </a>
-        <a href="sw-engineering.html"
-           class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
-            SW Engineering
-        </a>
-        <a href="#" class="bg-gray-900 text-blue-400 block rounded-md px-3 py-2 text-base font-medium">
-            Contact
-        </a>
-    </div>
+	<div class="space-y-1 px-2 pb-3 pt-0 hidden" id="div_mobile_navbar">
+		<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+		<a href="index.html"
+		   class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+			Home
+		</a>
+		<a href="sw-engineering.html"
+		   class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">
+			SW Engineering
+		</a>
+		<a href="#" class="bg-gray-900 text-blue-400 block rounded-md px-3 py-2 text-base font-medium">
+			Contact
+		</a>
+	</div>
 </nav>
 
 <!-- Webpage content -->
 <div class="mt-4 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
-    <!-- Profile image, name, position, and short bio -->
-    <div class="flex justify-center items-center">
-        <div
-                class="flex flex-col w-full items-center border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800">
+	<!-- Profile image, name, position, and short bio -->
+	<div class="flex justify-center items-center">
+		<div
+				class="flex flex-col w-full items-center border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800">
 
-            <!-- Left column: Location -->
-            <img class="rounded-lg md:h-auto md:w-64 md:rounded-none md:rounded-s-lg"
-                 src="assets/contact-location.png" alt="Location">
+			<!-- Left column: Location -->
+			<img class="rounded-lg md:h-auto md:w-64 md:rounded-none md:rounded-s-lg"
+				 src="assets/contact-location.png" alt="Location">
 
-            <!-- Right column: Name, position, bio, links -->
-            <div class="flex flex-col p-4 leading-normal">
+			<!-- Right column: Name, position, bio, links -->
+			<div class="flex flex-col p-4 leading-normal">
 
-                <!-- Name -->
-                <h5 class="text-2xl tracking-tight text-gray-900 dark:text-white">
-                    Office 560-A, A-dong, Ujeong-ro 72, Naju-si, Jeollanam-do, Republic of Korea
-                </h5>
-                <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
+				<!-- Name -->
+				<h5 class="text-2xl tracking-tight text-gray-900 dark:text-white">
+					Office 560-A, A-dong, Ujeong-ro 72, Naju-si, Jeollanam-do, Republic of Korea
+				</h5>
+				<hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
 
-                <!-- Location -->
-                <a class="inline-block text-blue-600 dark:text-white:200"
-                   href="https://map.naver.com/p/search/%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84%20%EB%82%98%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%A0%95%EB%A1%9C%2072%20A%EB%8F%99%20560-A%ED%98%B8/address/14113893.2445383,4167070.9585622,%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84%20%EB%82%98%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%A0%95%EB%A1%9C%2072,new?c=19.00,0,0,0,dh&isCorrectAnswer=true"
-                   target="_blank">
-                    [Open on naver map]
-                </a>
-            </div>
-        </div>
-    </div>
+				<!-- Location -->
+				<a class="inline-block text-blue-600 dark:text-white:200"
+				   href="https://map.naver.com/p/search/%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84%20%EB%82%98%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%A0%95%EB%A1%9C%2072%20A%EB%8F%99%20560-A%ED%98%B8/address/14113893.2445383,4167070.9585622,%EC%A0%84%EB%9D%BC%EB%82%A8%EB%8F%84%20%EB%82%98%EC%A3%BC%EC%8B%9C%20%EC%9A%B0%EC%A0%95%EB%A1%9C%2072,new?c=19.00,0,0,0,dh&isCorrectAnswer=true"
+				   target="_blank">
+					[Open on naver map]
+				</a>
+			</div>
+		</div>
+	</div>
 
-    <!-- Email -->
-    <div class="mt-2 block">
-        <a href="mailto:qobiljon.toshnazarov@gmail.com" title="qobiljon.toshnazarov@gmail.com"
-           class="align-middle space-x-1 fill-blue-600 dark:fill-blue-200 hover:fill-blue-400 dark:hover:fill-blue-500 text-gray-600 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-400 cursor-pointer">
-            <svg class="inline-block w-10 h-10" viewBox="0 0 500 500" width="500" height="500">
-                <path fill-rule="evenodd" class="a"
-                      d="m250 500c-138.3 0-250-111.8-250-250 0-138.3 111.8-250 250-250 138.3 0 250 111.8 250 250 0 138.3-111.8 250-250 250zm-145.8-168.6c0 11.6 9.4 21 21 21h249.6c11.6 0 21-9.4 21-21v-164.6c0-11.6-9.4-21-21-21h-249.6c-11.6 0-21 9.4-21 21zm259.1-131.7v140.6h-227.1l0.3-140.6 113.5 78.8zm-5.5-41.7c-31.8 22.1-107.8 75.7-107.8 75.7l-108.4-75.7z"/>
-            </svg>
-            <span class="inline-block align-middle text-lg">Contact via email: qobiljon.toshnazarov@gmail.com</span>
-        </a>
-    </div>
+	<!-- Email -->
+	<div class="mt-2 block">
+		<a href="mailto:qobiljon.toshnazarov@gmail.com" title="qobiljon.toshnazarov@gmail.com"
+		   class="align-middle space-x-1 fill-blue-600 dark:fill-blue-200 hover:fill-blue-400 dark:hover:fill-blue-500 text-gray-600 dark:text-gray-200 hover:text-gray-400 dark:hover:text-gray-400 cursor-pointer">
+			<svg class="inline-block w-10 h-10" viewBox="0 0 500 500" width="500" height="500">
+				<path fill-rule="evenodd" class="a"
+					  d="m250 500c-138.3 0-250-111.8-250-250 0-138.3 111.8-250 250-250 138.3 0 250 111.8 250 250 0 138.3-111.8 250-250 250zm-145.8-168.6c0 11.6 9.4 21 21 21h249.6c11.6 0 21-9.4 21-21v-164.6c0-11.6-9.4-21-21-21h-249.6c-11.6 0-21 9.4-21 21zm259.1-131.7v140.6h-227.1l0.3-140.6 113.5 78.8zm-5.5-41.7c-31.8 22.1-107.8 75.7-107.8 75.7l-108.4-75.7z"/>
+			</svg>
+			<span class="inline-block align-middle text-lg">Contact via email: qobiljon.toshnazarov@gmail.com</span>
+		</a>
+	</div>
 </div>
 
 <!-- Bottom bar -->
