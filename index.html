@@ -99,76 +99,80 @@
 <div class="mt-4 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
 	<!-- Profile image, name, position, and short bio -->
-	<h1 class="text-2xl mt-4 mb-1 text-blue-800 dark:text-blue-300">Introduction</h1>
-	<div class="flex justify-center items-center">
-		<div
-				class="flex flex-col w-full items-center border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800">
+	<div class="w-full border border-gray-100 rounded-lg shadow md:flex-row dark:border-gray-700 dark:bg-gray-800">
 
-			<!-- Left column: Profile image -->
-			<img class="rounded-lg w-16 md:w-64 md:rounded-none md:rounded-s-lg" src="assets/profile-picture.jpeg"
-				 alt="Profile image">
+		<!-- Left column: Profile image -->
+		<div class="flex items-center">
+			<img class="flex-col rounded-lg w-16 h-16" src="assets/profile-picture.jpeg" alt="Profile image">
+			<div class="flex-col w-full ps-4 text-sm text-black dark:text-white">
+				<p class="text-xl mt-2">Kobiljon Toshnazarov</p>
+				<p>Researcher at IMC lab</p>
+				<hr class="h-px mt-3 mt-1 bg-gray-200 border-0 dark:bg-gray-700">
+			</div>
+		</div>
 
-			<!-- Right column: Name, position, bio, links -->
-			<div class="flex flex-col p-4 leading-normal">
+		<!-- Right column: Name, position, bio, links -->
+		<div class="p-2 text-black dark:text-white">
 
-				<!-- Name -->
-				<h5 class="text-2xl tracking-tight text-gray-900 dark:text-white">
-					Dr. <strong>Kobiljon</strong> Toshnazarov
-				</h5>
+			<!-- Short bio -->
+			<p class="text-sm text-justify">
+				Hi,
+				<br><br>
 
-				<!-- Position -->
-				<h6 class="flex flex-col justify-between text-gray-900 dark:text-white">
-						<span>
-							Researcher @ <a class="text-blue-700 dark:text-blue-200"
-											href="https://imc.kentech.ac.kr/composition/">
-								IMC KENTECH
-							</a>
-						</span>
-				</h6>
-				<hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700">
+				I am Kobiljon, a backend developer at <a class="underline text-blue-600 hover:text-blue-800" href="https://toptal.com/resume/kobiljon-toshnazarov">Toptal</a>, also a researcher at <a class="underline text-blue-600 hover:text-blue-800" href="http://imc.hanyang.ac.kr:8080/composition/">IMC lab</a>.
+				<br>
+				These days I am finalizing my PhD at <a class="underline text-blue-600 hover:text-blue-800" href="https://kentech.ac.kr/">KENTECH</a>.
+				<br>
+				My research topics are stress detection and mHealth data collection (see see <a class="underline text-blue-600 hover:text-blue-800" href="https://scholar.google.com/citations?user=CQp5uugAAAAJ&hl=en">Google scholar profile</a>).
+				<br><br>
 
-				<!-- Short bio -->
-				<p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
-					Kobiljon is an engineering professional known for his exceptional critical thinking and
-					problem-solving abilities and resilience in managing multiple projects. With over six years of
-					R&D experience, coupled with a PhD candidacy, he specializes in steering projects from abstract
-					ideas to final deployments. With a robust set of soft and hard skills, Kobiljon ensures the
-					smooth and efficient completion of R&D projects.
-				</p>
+				I can communicate in English on an academic level, and I can freely talk in Korean, Russian, and Uzbek languages as well.
+				<br>
+				My hobbies are long-distance running and cycling (see <a class="underline text-blue-600 hover:text-blue-800" href="https://www.strava.com/athletes/qobiljon">Strava profile</a>).
+				<br>
+				I also do problem solving from time to time (see <a class="underline text-blue-600 hover:text-blue-800" href="https://leetcode.com/qobiljonn/">Leetcode profile</a>).
+				<br><br>
 
-				<!-- Links to follow updates -->
-				<div class="flex items-center space-x-2 mt-2 text-xs text-gray-800 dark:text-gray-200">
-					<span>Follow</span>
-					<!-- Strava button -->
-					<a type="button" href="https://strava.com/athletes/qobiljon"
-					   title="strava.com/athletes/qobiljon" target="_blank"
-					   class="inline-flex cursor-pointer px-2 py-1 bg-gray-200 dark:bg-gray-700 hover:bg-orange-400 rounded-full border-2 border-solid border-gray-300 hover:border-orange-600 hover:text-white cursor-default lg:order-3 items-center">
-						<svg class="w-5 h-5 inline-block" viewBox="0 0 64 64" width="64" height="64">
-							<path d="M41.03 47.852l-5.572-10.976h-8.172L41.03 64l13.736-27.124h-8.18"
-								  fill="#f9b797"/>
-							<path d="M27.898 21.944l7.564 14.928h11.124L27.898 0 9.234 36.876H20.35"
-								  fill="#f05222"/>
-						</svg>
-						<span class="ms-1">
+				I also actively do freelancing work.
+				<br>
+				If you have an interesting thing to do and I got your attention, then you can contact me at <a class="underline text-blue-600 hover:text-blue-800" href="mailto:qobiljon@kentech.ac.kr">qobiljon@kentech.ac.kr</a>.
+				<br><br>
+
+				Nice to meet you, and let's talk!
+			</p>
+
+			<!-- Links to follow updates -->
+			<div class="flex items-center space-x-2 mt-2 text-xs text-gray-800 dark:text-gray-200">
+				<span>Let's connect on</span>
+				<!-- Strava button -->
+				<a type="button" href="https://strava.com/athletes/qobiljon"
+				   title="strava.com/athletes/qobiljon" target="_blank"
+				   class="inline-flex cursor-pointer px-2 py-1 bg-gray-200 dark:bg-gray-700 hover:bg-orange-400 rounded-full border-2 border-solid border-gray-300 hover:border-orange-600 hover:text-white cursor-default lg:order-3 items-center">
+					<svg class="w-5 h-5 inline-block" viewBox="0 0 64 64" width="64" height="64">
+						<path d="M41.03 47.852l-5.572-10.976h-8.172L41.03 64l13.736-27.124h-8.18"
+							  fill="#f9b797"/>
+						<path d="M27.898 21.944l7.564 14.928h11.124L27.898 0 9.234 36.876H20.35"
+							  fill="#f05222"/>
+					</svg>
+					<span class="ms-1">
 								Strava
 							</span>
-					</a>
+				</a>
 
-					<!-- LinkedIn -->
-					<a type="button" href="https://linkedin.com/in/qobiljon" title="linkedin.com/in/qobiljon"
-					   target="_blank"
-					   class="inline-flex cursor-pointer px-2 py-1 bg-gray-200 dark:bg-gray-700 hover:bg-blue-400 rounded-full border-2 border-solid border-gray-300 hover:border-blue-600 hover:text-white cursor-default lg:order-3 items-center">
-						<svg class="w-5 h-5 inline-block" viewBox="0 0 500 500" width="500"
-							 height="500">
-							<path fill="#fff" d="m55 55h390v390h-390z"/>
-							<path fill="#0a66c2"
-								  d="m0 104c0-57.4 46.6-104 104-104h292c57.4 0 104 46.6 104 104v292c0 57.4-46.6 104-104 104h-292c-57.4 0-104-46.6-104-104zm104.2 291.8h62.5v-229.1h-62.5zm67.7-292.4c0-20.3-16.3-36.7-36.5-36.7-20.1 0-36.4 16.4-36.4 36.7 0 20.4 16.3 36.8 36.4 36.8 20.2 0 36.5-16.4 36.5-36.8zm244.8 151.6c0-109.5-116.8-105.5-145.9-51.6v-36.8h-62.5v229.2h62.5v-116.8c0-64.8 83.4-70.2 83.4 0v116.8h62.5z"/>
-						</svg>
-						<span class="ms-1">
+				<!-- LinkedIn -->
+				<a type="button" href="https://linkedin.com/in/qobiljon" title="linkedin.com/in/qobiljon"
+				   target="_blank"
+				   class="inline-flex cursor-pointer px-2 py-1 bg-gray-200 dark:bg-gray-700 hover:bg-blue-400 rounded-full border-2 border-solid border-gray-300 hover:border-blue-600 hover:text-white cursor-default lg:order-3 items-center">
+					<svg class="w-5 h-5 inline-block" viewBox="0 0 500 500" width="500"
+						 height="500">
+						<path fill="#fff" d="m55 55h390v390h-390z"/>
+						<path fill="#0a66c2"
+							  d="m0 104c0-57.4 46.6-104 104-104h292c57.4 0 104 46.6 104 104v292c0 57.4-46.6 104-104 104h-292c-57.4 0-104-46.6-104-104zm104.2 291.8h62.5v-229.1h-62.5zm67.7-292.4c0-20.3-16.3-36.7-36.5-36.7-20.1 0-36.4 16.4-36.4 36.7 0 20.4 16.3 36.8 36.4 36.8 20.2 0 36.5-16.4 36.5-36.8zm244.8 151.6c0-109.5-116.8-105.5-145.9-51.6v-36.8h-62.5v229.2h62.5v-116.8c0-64.8 83.4-70.2 83.4 0v116.8h62.5z"/>
+					</svg>
+					<span class="ms-1">
 								LinkedIn
 							</span>
-					</a>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
